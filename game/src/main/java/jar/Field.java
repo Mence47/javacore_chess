@@ -5,10 +5,14 @@ import jar.pieces.*;
 
 public class Field {
 
-    final private int i;
-    final private int j;
-    final private Color color;
+    private int i;
+    private int j;
+    private Color color;
     private Piece piece = null;
+
+    public Field() {
+        
+    }
 
     public Field(int i, int j, Color color, Piece piece) {
         this.i = i;
@@ -27,6 +31,18 @@ public class Field {
 
     public int getJ() {
         return j;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public void setJ(int j) {
+        this.j = j;
     }
 
     public Color getColor() {
