@@ -11,4 +11,12 @@ public class Knight extends Piece {
 
     @Override
     public boolean move() {return true;}
+
+    @Override
+    public String toString() {
+        if (this.getColor().isWhite())
+            return "♘";
+        else
+            return "♞";
+    }
 }

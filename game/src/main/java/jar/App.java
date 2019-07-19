@@ -2,13 +2,14 @@ package jar;
 
 import jar.Color;
 import jar.pieces.*;
+import jar.Board;
 
 public class App {
 
     public static void main(String[] args) {
-        Piece p = new Pawn(Color.BLACK);
+        Board b = new Board();
 
-        System.out.println(p.getColor().isWhite());
+        System.out.println(b);
     }
 }
  
